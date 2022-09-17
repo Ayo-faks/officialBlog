@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Avatar from '../components/avatar'
 import DateComponent from '../components/date'
 import CoverImage from '../components/cover-image'
+import ContentfulImage from './contentful-image'
 
 export default function HeroPost({
   title,
@@ -14,12 +15,19 @@ export default function HeroPost({
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage title={title} slug={slug} url={coverImage.url} />
+        {/* <CoverImage title={title} slug={slug} url={coverImage.url} /> */}
+        <ContentfulImage
+      width={600}
+      height={700}
+      alt={`Cover Image for ${title}`}
+      className="blog-preview-image"
+      src={coverImage.url}
+    />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
         <div>
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
-            <Link href={`/posts/${slug}`}>
+          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>

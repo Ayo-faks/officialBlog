@@ -3,3 +3,454 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #0d0d1d;
+    background-image: url(../public/images/spacedark.jpeg);
+    background-repeat: repeat;
+    /* background-size: cover; */
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    /* max-width: 960px; */
+    padding: 1.5rem;
+    font-family: 'Audiowide';
+    position: relative;
+}
+
+.blog-preview-image {
+    border-radius: 10px;
+}
+
+.text-lg {
+    font-size: 1.3rem;
+}
+
+article ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    padding-left: 10px;
+
+}
+
+.article ul li p {
+    margin: 0;
+    font-size: 18px;
+
+}
+
+.tag {
+    background-color: #a3cd96;
+    ;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.social {
+    text-align: center;
+    display: block;
+
+}
+
+.socialicons {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.redditSocial circle {
+    fill: #ff4500;
+}
+
+.redditSocial {
+    display: inline;
+}
+
+input {
+    margin-left: 10px
+}
+
+form,
+ol,
+ul {
+    list-style: circle;
+    font-size: 13px;
+    margin-left: 2.5rem;
+    color: white;
+}
+
+.resultsLink:hover {
+    color: #a3cd96;
+}
+
+.searchIcon {
+    margin: 1em 0;
+    background-image: url('https://i0.wp.com/www.thinkafrica.fi/wp-content/uploads/2019/04/search-icon.png?fit=1200%2C1200&ssl=1&w=640');
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+    color: rgba(111, 111, 111, 0.92);
+}
+
+label[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    opacity: 0.7;
+}
+
+label[type="submit"]:hover {
+    opacity: 1;
+}
+
+label[type="submit"]:focus,
+input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #a3cd96;
+    ;
+    border-color: #a3cd96;
+    ;
+    outline: none;
+    /* font-family: 'Audiowide'; */
+}
+
+input#algolia_search {
+    width: 100%;
+}
+
+.print,
+.load-more {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+
+.load-more {
+    margin: 0 auto 50px auto;
+}
+
+.printButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wake {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+button#lock-button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+a.mx-1.bg-white.border.border-dark.text-black.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
+    border-radius: 10px;
+    text-align: center;
+}
+
+a.hover\:underline {
+    /* color: white; */
+    color: #ffd307;
+}
+
+h4.text-center.md\:text-left.text-lg.mt-5.md\:pl-8 {
+    padding-left: 0rem;
+}
+
+.text-lg {
+    font-size: 1.1rem;
+}
+
+button.load-more {
+    margin-top: -80px;
+}
+
+a.nav-link.active [href="/posts/blog"] {
+    display: none;
+    visibility: hidden;
+
+}
+
+li.resultsLink {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.fa-home:before {
+    content: "\f015";
+    color: white;
+}
+
+.disqus-container {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: black !important;
+}
+
+@media print {
+    body {
+        background-image: none;
+        background-color: white;
+        color: black;
+    }
+
+    p,
+    a,
+    ul {
+        color: black;
+    }
+
+    .post-head-image-container {
+
+        width: 200px;
+    }
+
+    .printButton,
+    .navbar,
+    .tag,
+    .wake,
+    .social,
+    .disqus-container,
+    footer {
+        display: none;
+    }
+
+}
+
+::marker {
+    color: #ffd307;
+}
+
+h1 {
+    color: #ffd307;
+}
+
+h2 {
+    color: #b2d4f3;
+}
+
+.pagination-container {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 35px;
+    justify-content: center;
+    margin-left: 0;
+}
+.pagination-container .pagination-item {
+    padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: #edabae;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 16px;
+    line-height: 1.43;
+    font-size: 30px;
+    min-width: 32px;
+}
+.pagination-container .pagination-item.dots:hover {
+    background-color: transparent;
+    cursor: default;
+}
+.pagination-container .pagination-item:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.pagination-container .pagination-item.selected {
+    background-color: white;
+    color: #edabae;
+}
+.pagination-container .pagination-item .arrow::before {
+    position: relative;
+   /* top: 3pt;
+    Uncomment this to lower the icons as requested in comments*/
+    content: '';
+   /* By using an em scale, the arrows will size with the font */
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.12em solid #edabae;
+    border-top: 0.12em solid #edabae;
+}
+.pagination-container .pagination-item .arrow.left {
+    transform: rotate(-135deg) translate(-50%);
+}
+.pagination-container .pagination-item .arrow.right {
+    transform: rotate(45deg);
+}
+.pagination-container .pagination-item.disabled {
+    pointer-events: none;
+}
+.pagination-container .pagination-item.disabled .arrow::before {
+    border-right: 0.12em solid #edabae;
+    border-top: 0.12em solid #edabae;
+}
+.pagination-container .pagination-item.disabled:hover {
+    background-color: transparent;
+    cursor: default;
+}
+
+.blog-card {
+    padding: 3rem;
+}
+
+@media screen and (max-width: 425px) {
+    .blog-card {
+        padding: 1rem;
+    }
+    
+}
+
+a:active, a:hover {
+    color: #b2d4f3
+}
+
+/* Portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){
+    section.flex-col.md\:flex-row.flex.items-center.md\:justify-between.mt-8.mb-16.md\:mb-6 {
+        flex-direction: row;
+    }
+    h1.text-6xl.md\:text-8xl.font-bold.tracking-tighter.leading-tight.md\:pr-3  {
+        font-size: 4.75rem;
+    }
+    .iconImage {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mb-8.md\:mb-16 {
+        width: 50%;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .md\:grid.md\:grid-cols-2.md\:col-gap-16.lg\:col-gap-8.mb-20.md\:mb-28  {
+        display: flow-root;
+    }
+    .nav-icon-contatiner {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+/* @media (prefers-color-scheme: dark) {
+    .main { background:  red; }
+  } */
+ 
+
+  /* @media (prefers-color-scheme: light) {
+    body { 
+        background-image: url(../public/images/spacelight.png);
+        color: black;
+         }
+  } */
+
+  @media screen and (max-width: 786px) {
+    .nav-icon-contatiner {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+      
+  }
+
+  .light-mode {
+    background-image: url(../public/images/spacelight.png);
+    color: black;
+  }
+  
+  .light-mode .resultsLink {
+    color: black;
+  }
+
+  .light-mode .resultsLink:hover {
+    color: white;
+  }
+  

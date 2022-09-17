@@ -34,9 +34,26 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={`A blog dedicated to cooking up recipes for all those far far and away.`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
-    </Head>
+      {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@fakoyaayoola" />
+      <meta name="twitter:creator" content="@fakoyaayoola" />
+      <meta name="twitter:title" content="Ayo's Blog" />
+      <meta name="twitter:description" content="A blog dedicated to my thoughts." />
+      <meta property="twitter:image" content="https://cookblog.vercel.app/images/StarWarsUtensilSocial.jpg"/>
+
+
+      <meta property="og:title" content="Ayo's Blog"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://ayoolafakoya.com/"/>
+      <meta property="og:image" content="https://cookblog.vercel.app/images/StarWarsUtensilSocial.jpg"/>
+      {/* <meta property="og:site_name" content="Stahlwalker"/> */}
+      <meta property="fb:app_id" content="511134710437125"/>
+      <meta property="og:description" content="A blog dedicated to my thoughts."/>
+
+      </Head>
   )
 }

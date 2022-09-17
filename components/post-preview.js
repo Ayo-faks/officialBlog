@@ -12,7 +12,7 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
+    <div className="mb-5 blog-card">       
       <div className="mb-5">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
